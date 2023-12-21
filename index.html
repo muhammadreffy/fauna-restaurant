@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-12">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="fixed z-50 mt-0 w-full flex justify-between items-center bg-gray-950 p-3 lg:justify-around">
+        <!-- LOGO -->
+        <div class="flex items-center gap-1 capitalize text-blue-400">
+            <i class="fa-solid fa-utensils"></i>
+            <h1 class="text-2xl font-semibold">Fauna</h1>
+        </div>
+        <!-- Navbar -->
+        <nav class="hidden sm:block md:block lg:block">
+            <ul class="flex gap-2 text-slate-300">
+                <li><a href="#home" class="px-2 py-1 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:rounded-sm hover:text-white">Home</a></li>
+                <li><a href="#dishes" class="px-2 py-1 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:rounded-sm hover:text-white">Dishes</a></li>
+                <li><a href="#about" class="px-2 py-1 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:rounded-sm hover:text-white">About</a></li>
+                <li><a href="#menu" class="px-2 py-1 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:rounded-sm hover:text-white">Menu</a></li>
+                <li><a href="#review" class="px-2 py-1 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:rounded-sm hover:text-white">Review</a></li>
+                <li><a href="#order" class="px-2 py-1 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:rounded-sm hover:text-white">Order</a></li>
+            </ul>
+        </nav>
+        <!-- Menu Untuk di layar large -->
+        <div class="hidden sm:block lg:block"> 
+            <i class="fa-solid fa-magnifying-glass bg-blue-700 text-white rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:text-white cursor-pointer"></i>
+            <i class="fa-solid fa-heart bg-blue-700 text-white rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:text-white cursor-pointer"></i>
+            <i class="fa-solid fa-cart-shopping bg-blue-700 text-white rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:text-white cursor-pointer"></i>
+        </div>
+
+        <!-- Menu untuk di mobile -->
+        <div class="sm:hidden lg:hidden">
+            <i class="fa-solid fa-bars bg-blue-700 text-white rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:text-white cursor-pointer"></i>
+            <i class="fa-solid fa-magnifying-glass bg-blue-700 text-white rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:text-white cursor-pointer"></i>
+            <i class="fa-solid fa-heart bg-blue-700 text-white rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:text-white cursor-pointer"></i>
+            <i class="fa-solid fa-cart-shopping bg-blue-700 text-white rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-blue-800 hover:text-white cursor-pointer"></i>
+        </div>
+    </header>
+    
+    <!-- Home -->
+    <section id="home" class="relative">
+        <img src="img/1.jpg" alt="Restaurant" class="w-full min-h-screen object-cover lg:max-h-96">
+        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center mx-auto text-center">
+            <div class="text-white z-10">
+                <h1 class="text-5xl md:text-8xl sm:text-7xl font-bold">Fauna<br class="lg:hidden"> Restaurant</h1>
+                <p class="mt-2 mb-10 text-xs md:text-sm sm:text-md">Lorem ipsum dolor sit amet consectetur<br class="lg:hidden">adipisicing elit. Sed, veritatis?
+                </p>
+                <a href="#order" class="text-sm md:text-base sm:text-lg bg-blue-700 px-2 py-1 md:px-4 md:py-2 rounded-sm hover:bg-blue-800 transition-all duration-300 ease-in-out">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dishes" class="bg-slate-300">
+        <!-- Dishes -->
+        <div class="text-center p-4">
+            <p class="text-lg font-bold">Our Dishes</p>
+            <h1 class="text-2xl uppercase font-extrabold text-blue-700">Popular Dishes</h1>
+        </div>
+
+        <!-- Card Dishes -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 mx-auto md:max-w-screen-md lg:max-w-screen-lg sm:max-w-screen-sm pb-5">
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="text-center mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Tasty Food</h1>
+                    </div>
+                    <div class="text-center mt-1 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class="flex justify-evenly items-center mt-4 text-white">
+                        <span class="text-blue-700 font-semibold">$12.99</span>
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mb-10">
+        <div class="mt-6 text-center p-4">
+            <p class="text-lg font-bold">About Us</p>
+            <h1 class="text-2xl font-extrabold uppercase text-blue-700">Why Choose Us?</h1>
+        </div>
+
+        <div class="lg:flex lg:mx-auto lg:items-center lg:gap-4 px-6  mt-3 lg:max-w-4xl md:flex md:mx-auto md:items-center sm:flex sm:mx-auto sm-item-center sm:gap-2 sm:max-w-2xl">
+            <div class="md:h-72 md:w-full md:scale-105 md:bg-center">
+                <img src="img/1.jpg" alt="" class="rounded-md max-w-3xl w-full h-full hover:scale-105 transition-all duration-500">
+            </div>
+            <div class="md:ml-5">
+                <div>
+                    <h1 class="text-2xl font-bold mt-2 lg:mt-0 lg:text-4xl md:mt-0 sm:mt-0 md:text-4xl ">Best Food in The Country</h1>
+                    <p class="text-sm mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae nihil veritatis quas laudantium. Debitis labore inventore deleniti ea sit assumenda ipsum quasi at eius!</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati soluta ducimus optio in! Fugit facilis, blanditiis illum cum temporibus velit.</p>
+                </div>
+                <div class="flex mx-auto mt-2 mb-2 gap-1">
+                    <a href="#" class="flex-1 group text-xs p-4 bg-gray-200 rounded-sm border border-gray-300 font-semibold md:text-center lg:text-center hover:bg-blue-700 hover:text-white transition-all duration-300 ease-in-out"><i class="fas fa-shipping-fast text-sm text-blue-500 group-hover:text-white"></i> Free Delivery
+                    </a>
+                    <a href="#" class="flex-1 group text-xs p-4 bg-gray-200 rounded-sm border border-gray-300 font-semibold md:text-center lg:text-center hover:bg-blue-700 hover:text-white transition-all duration-300 ease-in-out"><i class="fa-solid fa-dollar-sign text-sm text-blue-500 group-hover:text-white"></i> Easy Payments
+                    </a>
+                    <a href="#" class="flex-1 group text-xs p-4 bg-gray-200 rounded-sm border border-gray-300 font-semibold  md:text-center lg:text-center hover:bg-blue-700 hover:text-white transition-all duration-300 ease-in-out"><i class="fa-solid fa-headset text-sm text-blue-500 group-hover:text-white "></i> 24/7 Services
+                    </a>
+                </div>
+                <div class="py-1 bg-blue-700 w-full text-center font-semibold text-white rounded-sm border border-black hover:bg-blue-800 cursor-pointer">
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="bg-slate-300">
+        <div class="mt-6 p-4 text-center">
+            <p class="text-lg font-bold">Our Menu</p>
+            <h1 class="font-extrabold uppercase text-2xl text-blue-700">Today's Speciality</h1>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 mx-auto md:max-w-screen-md lg:max-w-screen-lg sm:max-w-screen-sm pb-5">
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-1 sm:px-1 md:px-1 lg:px-1 relative">
+                <div class="w-full p-2 bg-white rounded-md shadow-sm">
+                    <div class="rounded-md overflow-hidden">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="mt-2 text-xs">
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star text-blue-700"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700"></i>
+                    </div>
+                    <div class=" mt-1">
+                        <h1 class="font-bold text-lg text-slate-900">Delicious Food</h1>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, quod.</p>
+                    </div>
+                    <div class="flex items-center mt-4 text-white">
+                        <a href="" class="bg-blue-700 px-2 py-1 rounded-md text-sm transition-all duration-300 ease-in-out hover:bg-blue-800">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-heart absolute top-3 right-7 lg:top-3 lg:right-3 m-2 bg-blue-700 p-2 rounded-full transition-all duration-300 ease-in-out hover:bg-blue-800 cursor-pointer"></i>
+                        <span class="ml-2 text-blue-700 font-semibold">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Review -->
+    <section id="review">
+        <div class="mt-6 p-4 text-center">
+            <p class="text-lg font-bold">Customer's Review</p>
+            <h1 class="uppercase text-2xl font-extrabold text-blue-700">What They Say?</h1>
+        </div>
+        <div class="grid grid-cols-1 md:max-w-screen-md md:grid-cols-3 lg:grid-cols-3 mx-auto lg:max-w-screen-lg">
+            <!-- Card Review Pertama -->
+            <div class="px-6 py-2 md:px-2 lg:px-2 relative">
+                <div class="w-full px-5 py-2 rounded-md bg-gray-300">
+                    <div class="flex items-center">
+                        <img src="img/pics-2.jpg" alt="" class="w-12 rounded-full">
+                        <h3 class="text-sm font-semibold ml-2">Maya Valencia<br>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700 text-xs"></i></h3>
+                    </div>
+                    <i class="fa-solid fa-quote-right absolute text-zinc-400 text-3xl top-3 right-7 md:right-2 lg:top-3 lg:right-5 m-2 p-2"></i>
+                    <div class="mt-2">
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet voluptates repellendus soluta quibusdam. Itaque, ut incidunt.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Review Kedua -->
+            <div class="px-6 py-2 md:px-2 lg:px-2 relative">
+                <div class="w-full px-5 py-2 rounded-md bg-gray-300">
+                    <div class="flex items-center">
+                        <img src="img/pics-1.jpg" alt="" class="w-12 rounded-full">
+                        <h3 class="text-sm font-semibold ml-2">Michael Jeremy<br>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700 text-xs"></i></h3>
+                    </div>
+                    <i class="fa-solid fa-quote-right absolute text-zinc-400 text-3xl top-3 right-7 md:right-2 lg:top-3 lg:right-5 m-2 p-2"></i>
+                    <div class="mt-2">
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet voluptates repellendus soluta quibusdam. Itaque, ut incidunt.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Review Ketiga -->
+            <div class="px-6 py-2 md:px-2 lg:px-2 relative">
+                <div class="w-full px-5 py-2 rounded-md bg-gray-300">
+                    <div class="flex items-center">
+                        <img src="img/pics-3.jpg" alt="" class="w-12 rounded-full">
+                        <h3 class="text-sm font-semibold ml-2">Valerie Cordelia<br>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star text-blue-700 text-xs"></i>
+                        <i class="fa-solid fa-star-half-stroke text-blue-700 text-xs"></i></h3>
+                    </div>
+                    <i class="fa-solid fa-quote-right absolute text-zinc-400 text-3xl top-3 right-7 md:right-2 lg:top-3 lg:right-5 m-2 p-2"></i>
+                    <div class="mt-2">
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet voluptates repellendus soluta quibusdam. Itaque, ut incidunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order -->
+    <section id="order" class="mt-6 pb-6 lg:pb-6 bg-gray-200">
+        <div class="text-center p-4">
+            <span class="text-lg font-bold">Order Now</span>
+            <h1 class="uppercase font-extrabold text-2xl text-blue-700">Free and Fast</h1>
+        </div>
+        <div class="px-6 py-1 mx-auto max-w-screen-lg">
+            <div class="p-6 bg-white rounded-sm shadow-xl md:flex lg:flex flex-wrap">
+                <div class="w-full md:w-1/2 md:pr-4 lg:w-1/2 lg:pr-4">
+                    <form action="">
+                        <label for="username" class="text-sm font-semibold text-blue-800">Username</label><br>
+                        <input type="text" id="username" required placeholder="enter your name" class="p-2 mb-2 bg-gray-200 w-full rounded-sm focus:outline-blue-400"><br>
+
+                        <label for="your-order" class="text-sm font-semibold text-blue-800">Your Order</label><br>
+                        <input type="text" id="your-order" required placeholder="enter food name" class="p-2 mb-2 bg-gray-200 w-full rounded-sm focus:outline-blue-400"><br>
+
+                        <label for="how-much" class="text-sm font-semibold text-blue-800">How Much</label><br>
+                        <input type="text" id="how-much" required placeholder="how many orders" class="p-2 mb-2 bg-gray-200 w-full rounded-sm focus:outline-blue-400"><br>
+
+                        <label for="your-address" class="text-sm font-semibold text-blue-800">Your Address</label><br>
+                        <textarea id="your-address" name="your-address" rows="4" required placeholder="enter your address" class="bg-gray-200 p-2 mb-2 resize-none w-full rounded-sm focus:outline-blue-400"></textarea><br>
+                    </form>
+                </div>
+                <div class="w-full md:w-1/2 md:pl-4 lg:w-1/2 lg:pl-4">
+                    <form action="">
+                        <label for="phone-number" class="text-sm font-semibold text-blue-800">Your Number</label><br>
+                        <input type="tel" id="phone-number" required placeholder="enter your number" pattern="[0-9]" class="p-2 mb-2 bg-gray-200 w-full rounded-sm focus:outline-blue-400"><br>
+
+                        <label for="add-food" class="text-sm font-semibold text-blue-800">Additional Food</label><br>
+                        <input type="text" id="add-food" required placeholder="extra with food" class="p-2 mb-2 bg-gray-200 w-full rounded-sm focus:outline-blue-400"><br>
+
+                        <label for="date" class="text-sm font-semibold text-blue-800">Date and Time</label><br>
+                        <input type="datetime-local" id="date" required class="p-2 mb-2 bg-gray-200 w-full rounded-sm focus:outline-blue-400"><br>
+
+                        <label for="message" class="text-sm font-semibold text-blue-800">Your Message</label><br>
+                        <textarea id="message" name="message" rows="4" required placeholder="enter your message" class="bg-gray-200 p-2 mb-2 resize-none w-full rounded-sm focus:outline-blue-400"></textarea><br>
+                    </form>
+                </div>
+                <input type="submit" value="Order Now" class="px-4 py-1 text-sm bg-blue-700 text-white rounded-sm hover:bg-blue-800 cursor-pointer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700">
+        <div class="pt-6 pb-2 text-center">
+            <h1 class="font-bold text-white text-2xl">Fauna Restaurant</h1>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="p-6 max-w-screen-lg mx-auto sm:flex md:flex lg:flex justify-around">
+            <div>
+                <h1 class="text-2xl font-bold text-white">Locations</h1>
+                <ul class="text-sm text-gray-300">
+                    <li class="mt-2">Indonesia</li>
+                    <li class="mt-1">Malaysia</li>
+                    <li class="mt-1">Qatar</li>
+                    <li class="mt-1">Spanyol</li>
+                    <li class="mt-1">Japan</li>
+                </ul>
+            </div>
+
+            <div class="mt-5 sm:mt-0 md:mt-0 lg:mt-0">
+                <h1 class="text-2xl font-bold text-white">Quick Links</h1>
+                <ul class="text-sm text-gray-300">
+                    <li class="mt-2"><a href="#home" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Home</a></li>
+                    <li class="mt-1"><a href="#dishes" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Dishes</a></li>
+                    <li class="mt-1"><a href="#about" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">About</a></li>
+                    <li class="mt-1"><a href="#menu" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Menu</a></li>
+                    <li class="mt-1"><a href="#review" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Review</a></li>
+                    <li class="mt-1"><a href="#order" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Order</a></li>
+                </ul>
+            </div>
+
+            <div class="mt-5 sm:mt-0 md:mt-0 lg:mt-0">
+                <h1 class="text-2xl font-bold text-white">Contact Info</h1>
+                <ul class="text-sm text-gray-300">
+                    <li class="mt-2">+62 81234567891</li>
+                    <li class="mt-1">+44 20 7946 0958</li>
+                    <li class="mt-1">lorem@gmail.com</li>
+                    <li class="mt-1">ipsum@gmail.com</li>
+                    <li class="mt-1">dolor@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div class="mt-5 sm:mt-0 md:mt-0 lg:mt-0">
+                <h1 class="text-2xl font-bold text-white">Follow Us</h1>
+                <ul class="text-sm text-gray-300">
+                    <li class="mt-2"><a href="#" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Facebook</a></li>
+                    <li class="mt-1"><a href="#" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Twitter</a></li>
+                    <li class="mt-1"><a href="#" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Instagram</a></li>
+                    <li class="mt-1"><a href="#" class="hover:font-semibold hover:text-white transition-all duration-300 ease-in-out">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-400"></div>
+        <p class="mt-6 pb-6 text-gray-300 text-center">Created by <a href="https://www.instagram.com/muhammadreffy_" target="_blank" class="font-bold hover:text-primer transition-all duration-300 ease-in-out">Muhammad Reffy</a></p>
+    </footer>
+</body>
+</html>
